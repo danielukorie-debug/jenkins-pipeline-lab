@@ -1,0 +1,17 @@
+# Credentials and private keys
+.env
+.env.*
+*.pem
+*.key
+*.secret
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Local dependencies
+node_modules/
+
+# Operating system files
+.DS_Store
+Thumbs.db
