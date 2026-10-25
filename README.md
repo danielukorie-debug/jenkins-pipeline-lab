@@ -48,3 +48,24 @@ Prints a second message to demonstrate sequential pipeline stages.
 - Run Terraform formatting and validation.
 - Build and test Docker images.
 - Add automated deployment stages.
+
+
+## Pipeline Workflow Diagram
+
+This diagram represents the two stages defined in the current `Jenkinsfile`. The screenshot below will provide evidence from an actual Jenkins run.
+
+```mermaid
+flowchart TD
+    Start[Build starts]
+    Agent[agent any: Jenkins selects an available agent]
+    Welcome[Welcome stage: print greeting messages]
+    Check[Check stage: print automated job message]
+    Result[Pipeline result]
+    Start --> Agent --> Welcome --> Check --> Result
+```
+
+## Successful Pipeline Run
+
+The screenshot below should show a real successful Jenkins build. It is added after the pipeline has been executed.
+
+![Successful Jenkins pipeline](docs/images/jenkins-pipeline-success.png)
