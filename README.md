@@ -66,6 +66,6 @@ flowchart TD
 
 ## Successful Pipeline Run
 
-The screenshot below should show a real successful Jenkins build. It is added after the pipeline has been executed.
+The screenshot below captures the successful Jenkins build and provides evidence of an actual pipeline run.
 
 ![Successful Jenkins pipeline](docs/images/jenkins-pipeline-success.png)
